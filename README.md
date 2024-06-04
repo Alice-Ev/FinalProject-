@@ -22,7 +22,7 @@ Table of Contents
     Contributing
     License
 
-Node Project Structure:
+ ## Node Project Structure:
 
 The project follows a well-organized structure to maintain clean and scalable code. Below is an overview of the main folders in the project:
 
@@ -71,7 +71,7 @@ Installation
 
 
 
-React Project structure:
+ ##  React Project structure:
 
 The project is organized to maintain a clean and scalable codebase. Below is an overview of the main folders in the project:
 
@@ -116,22 +116,22 @@ Includes schemas and functions for validating form inputs and other data structu
 
 
 
-Install the dependencies:
+ ##  Install the dependencies:
 npm install
 PORT=3001
 
 
-Start the backend server:
+ ##  Start the backend server:
     npm start
 
-Install the dependencies:
+ ##  Install the dependencies:
 npm install
 port 3030
 
-Start the development server:
+ ##  Start the development server:
     npm run dev
 
-!important .env file and set up the following environment variables in:
+ ### !important .env file and set up the following environment variables in:
 EXAMPLE.env file 
 Usage
 
@@ -139,21 +139,21 @@ Once both the backend and frontend servers are running, you can access the appli
 
 
 
-Login and Authentication
+ ## Login and Authentication
 
     Users can log in to access personalized features such as managing their own cards and liking cards.
     The login state is managed using a context provider (LoginContext).
 
-Managing Cards
+ ## Managing Cards
 
     Users can create new cards, edit existing cards, delete cards, and like cards.
     Cards can be filtered and searched based on their titles.
 
-Cart Management
+ ## Cart Management
 
     Users can add cards to their cart for easy reference.
 
-Features
+ ## Features
 
     Create, Edit, and Delete Cards: Manage your pet cards with ease.
     Like Cards: Like cards to add them to your favorites.
@@ -161,14 +161,15 @@ Features
     Filter and Search: Easily filter and search through cards.
     Toast Notifications: Receive feedback on your actions with toast notifications.
 
-Frontend
-Components
+ ### Frontend
+ 
+ ## Components
 
     MyCardComponent: Represents individual cards with actions like edit, delete, like, and add to cart.
     CardComponent: A component used to display cards in the cart.
     MyCards: Displays a list of cards created by the user.
 
-Hooks
+ ## Hooks
 useMyCreatedCards
 
 This custom hook manages the state and actions related to the user's created cards.
@@ -185,7 +186,7 @@ This custom hook manages the state and actions related to the user's created car
         handleCartCard: Adds a card to the cart.
         handleMoveCard: Navigates to the card details page.
 
-Routes
+ ## Routes
 
     Home: / - The home page of the application.
     About: /about - The about page of the application.
@@ -223,19 +224,19 @@ Routes
     Callback: /callback - Callback page for handling redirects.
     Cart: /cart - Displays the user's cart.
 
-Context
+ ## Context
 LoginContext
 
-Manages the login state and provides it to the rest of the application.
+ ## Manages the login state and provides it to the rest of the application.
 Toast Notifications
 
-Toast notifications are used to provide feedback to the user on various actions such as creating, editing, deleting, and liking cards. The notifications are handled using react-toastify.
+ ## Toast notifications are used to provide feedback to the user on various actions such as creating, editing, deleting, and liking cards. The notifications are handled using react-toastify.
 
 
-Backend
-API Endpoints
+ ### Backend
+ ## API Endpoints
 
-User Routes
+ ## User Routes
 
     GET /users/: Fetches all users. (Protected: Admin)
     POST /users/forgotPassword: Sends a password reset email.
@@ -252,7 +253,7 @@ User Routes
     DELETE /users/
     : Deletes a user. (Protected: Admin or Own User)
 
-Card Routes
+ ## Card Routes
 
     GET /cards/: Fetches all cards.
     GET /cards/categories: Fetches the list of categories.
@@ -271,7 +272,7 @@ Card Routes
     DELETE /cards/
     : Deletes a card by ID. (Protected: Admin or Business User)
 
-Example Usage
+ ## Example Usage
 
 // Fetch user's created cards
 axios.get("/cards/my-cards")
@@ -300,7 +301,7 @@ axios.delete(`/cards/${id}`)
     // Handle error
   });
 
-Database Schema
+ ## Database Schema
 
 The application uses MongoDB to store data. Below is an example of the schema for the cards:
 

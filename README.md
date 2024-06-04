@@ -1,7 +1,7 @@
 # FinalProject-
 Final Project React and Node
 
-###PetExpress
+### PetExpress
 
 PetExpress is a full-stack web application for managing and showcasing pet-related cards. Users can create, edit, delete, and like cards, as well as filter and search through their collection. It also includes features such as adding cards to a cart and handling phone calls related to the cards.
 Table of Contents

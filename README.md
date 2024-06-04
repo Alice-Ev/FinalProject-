@@ -26,46 +26,46 @@ Node Project Structure:
 
 The project follows a well-organized structure to maintain clean and scalable code. Below is an overview of the main folders in the project:
 
-bin
+bin - 
 This folder contains the server startup script, typically www, which initializes and starts the Node.js application.
 
-build
+build - 
 Contains the compiled version of the code if you're using a build tool to transpile your code (e.g., Babel or TypeScript).
 
-controllers
+controllers - 
 Holds the logic for handling requests and responses. Each controller corresponds to a specific route or set of related routes.
 
-initialData
+initialData - 
 Includes scripts or JSON files to populate the database with initial or seed data.
 
-loggers
+loggers - 
 Contains configurations and utilities for logging. This helps in debugging and keeping track of application activities.
 
-middlewares
+middlewares - 
 Includes custom middleware functions used to process requests before they reach the controllers. Common tasks include authentication, validation, and error handling.
 
-model
+model - 
 Contains the database schemas and models, defining the structure of the data used in the application.
 
-normalize
+normalize - 
 Includes functions to normalize data, ensuring consistency in the format of the data being used or returned by the API.
 
-public
+public - 
 Holds static files such as images, stylesheets, and client-side JavaScript that need to be served to the client.
 
-routes
+routes - 
 Defines the routes for the application, linking URL paths to specific controllers and their methods.
 
-token
+token - 
 Contains utilities and configurations related to token generation and validation, typically for authentication purposes.
 
-utils
+utils - 
 Utility functions and helpers used across the application for various tasks.
 
-validation
+validation - 
 Includes schemas and functions for validating incoming request data, ensuring it meets the required formats and constraints.
 
-env
+env -
 Holds environment configuration files that define environment-specific settings and variables.
 Installation
 
@@ -75,43 +75,43 @@ React Project structure:
 
 The project is organized to maintain a clean and scalable codebase. Below is an overview of the main folders in the project:
 
-build
+build - 
 Contains the production-ready version of the code, created after running the build process (e.g., with Webpack or Create React App).
 
-public
+public - 
 Holds static files that need to be served directly by the web server, such as index.html, images, and other assets. These files are not processed by Webpack.
 
-assets
+assets - 
 Includes static assets like images, fonts, and other media files used throughout the application.
 
-components
+components - 
 Contains reusable React components, which are the building blocks of the user interface. Each component typically has its own folder with related CSS and test files.
 
-css
+css - 
 Stores global CSS files and style-related utilities. This can include stylesheets for theming, global resets, and common mixins.
 
-guard
+guard - 
 Includes higher-order components or utility functions for route protection and authorization logic, ensuring that only authenticated users can access certain routes.
 
-hook
+hook - 
 Custom hooks for encapsulating reusable logic that can be shared across multiple components. This helps in maintaining DRY (Don't Repeat Yourself) principles.
 
-layout
+layout - 
 Contains layout components that define the structure of the pages, such as headers, footers, sidebars, and navigation components.
 
-pages
+pages - 
 Each folder corresponds to a route in the application. These folders typically contain a main page component and any sub-components related to that specific page.
 
-routes
+routes - 
 Defines the routing logic of the application, mapping URL paths to specific components or pages. This often includes route configuration files and helper components for nested routes.
 
-services
+services - 
 Includes modules that handle data fetching, API calls, and other interactions with external services. This layer abstracts away the details of data handling from the components.
 
-store
+store - 
 Contains the state management logic, including Context store configuration, slices, actions, and reducers. This folder centralizes the application's state and logic.
 
-validation
+validation - 
 Includes schemas and functions for validating form inputs and other data structures used within the application, ensuring that data meets the required formats and constraints.
 
 
